@@ -58,6 +58,10 @@ group :test do
   gem 'database_cleaner'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 gem 'binding_of_caller'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
