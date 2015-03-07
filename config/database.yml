@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: just_neph_v2_production
-  username: just_neph_v2
-  password: <%= ENV['JUST_NEPH_V2_DATABASE_PASSWORD'] %>
+  url: <%=ENV['DATABASE_URL'] %>
+  database: dfss3o6nnj07b6
+  username: dcfooezslhyswb
+  password: <%= ENV['DATABASE_PASSWORD'] %>
