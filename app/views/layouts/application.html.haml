@@ -5,7 +5,13 @@
     %title JustNephV2
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic'
+
     = csrf_meta_tags
+    %script{"data-dojo-config" => "usePlainJson: true, isDebug: false", :src => "//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js", :type => "text/javascript"}
+    :javascript
+      require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"deb75043bf18b4af189e63059","lid":"cd4a2d60ff"}) })
   %body
     = render "layouts/shared/header"
     = yield
+    = render "layouts/shared/footer"
