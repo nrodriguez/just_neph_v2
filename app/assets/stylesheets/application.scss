@@ -15,7 +15,9 @@
  // Then bootstrap itself
  @import "bootstrap";
 
- @import "font-awesome/font-awesome";
+ //@import "font-awesome/font-awesome";
+
+ @import "font-awesome";
 
  // Whatever application styles you have go last
  @import "base";
