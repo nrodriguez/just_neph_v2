@@ -5,10 +5,17 @@
       %h1 Nephtali "JustNeph" Rodriguez
 
       .col-md-10
-        %p Entertainer | Wrestler | #BoomTime | Software Engineer
+        %p
+          = link_to "Entertainer", "#entertainer", data: {scroll: "true"}
+          |
+          = link_to "Wrestler", "#wrestler", data: {scroll: "true"}
+          |
+          = link_to "#BoomTime", "#boomtime", data: {scroll: "true"}
+          |
+          = link_to "Software Engineer", "#software_engineer", data: {scroll: "true"}
 
 
-#about-content
+%nav#about-content
   / fullwidth gray background
   .container
     / container

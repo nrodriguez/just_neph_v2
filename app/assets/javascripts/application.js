@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require smooth-scroll.min
 //= require_tree .
