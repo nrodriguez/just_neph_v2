@@ -1,16 +1,21 @@
-.content-section-a
+.spacer
+#about-header
   .container
     .row
-      .col-lg-5.col-sm-6
-        .clearfix
-        .media
-          .media-left
-            = image_tag "about-profile.png"
-          .media-body
-            %h4.media-heading Media heading
-            amsldams
-        .media
-          .media-left
-            = image_tag "about-profile.png"
-          .media-body
-            %h4.media-heading Media heading
+      %h1 Nephtali "JustNeph" Rodriguez
+
+      .col-md-10
+        %p Entertainer | Wrestler | #BoomTime | Software Engineer
+
+
+#about-content
+  / fullwidth gray background
+  .container
+    / container
+    = render "entertainer"
+
+    = render "wrestler"
+
+    = render "boomtime"
+
+    = render "software_engineer"
